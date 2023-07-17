@@ -37,6 +37,7 @@ td, th {
 
 
                 double interestAmount = totalAmount * Math.Pow((1 + (ViewBag.InterestRate / 100) / 12), (12 * 1));
+                interestAmount -= totalAmount;
                 interestAmount = Math.Round(interestAmount, 2);
                 totalAmount += interestAmount;
                 totalAmount = Math.Round(totalAmount, 2);
