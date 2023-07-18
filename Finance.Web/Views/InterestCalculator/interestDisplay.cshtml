@@ -18,10 +18,7 @@ td, th {
         background-color: #dddddd;
     }
 </style>
-<p>Hello @ViewBag.Deposit</p>
-<p>Hello @ViewBag.NumberOfYears</p>
-<p>Hello @ViewBag.InterestRate</p>
-<p>Hello @ViewBag.TotalAmount</p>
+
 
 <table border="1">
     <tr>
@@ -46,8 +43,12 @@ td, th {
             <td>£@totalAmount</td>
 
         </tr>
+
+
     }
 </table>
+
+<p>Total balance after @ViewBag.NumberOfYears years is £@totalAmount</p>
 
 
 

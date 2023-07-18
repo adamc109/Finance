@@ -10,20 +10,21 @@
 <form method="post">
     <div class="mb-3">
         <label for="addeposit" class="form-label">Deposit</label><br />
-        <input id="addeposit" name="addeposit" type="number"/>
-    <br />
+        <input id="addeposit" name="addeposit" type="number" />
+        <br />
 
-    <br />
-    <input name="years" type="number" />
 
+
+        <label for="years" class="form-label">Number of Years</label><br />
+        <input name="years" type="number" /><br />
+
+        <label for="rate" class="form-label">Interest Rate</label><br />
         <input name="rate" type="number" />
+
     </div>
     <div class="mb-3">
         <button type="submit" class="btn btn-dark">Submit</button>
     </div>
 </form>
 
-<p>Hello @ViewBag.Deposit</p>
-<p>Hello @ViewBag.NumberOfYears</p>
-<p>Hello @ViewBag.InterestRate</p>
 
