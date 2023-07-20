@@ -20,6 +20,7 @@ td, th {
 </style>
 
 
+<div class="container-fluid mb-3">
 <table border="1">
     <tr>
         <th>Year</th>
@@ -39,6 +40,7 @@ td, th {
                 totalAmount += interestAmount;
                 totalAmount = Math.Round(totalAmount, 2);
             }
+
             <td>£@interestAmount</td>
             <td>£@totalAmount</td>
 
@@ -47,8 +49,11 @@ td, th {
 
     }
 </table>
+</div>
 
+<div class="container justify-content-around">
 <p>Total balance after @ViewBag.NumberOfYears years is £@totalAmount</p>
+</div>
 
 
 
